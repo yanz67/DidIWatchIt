@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10174" systemVersion="16A323" minimumToolsVersion="Xcode 7.0">
+    <entity name="Episode" representedClassName=".Episode" syncable="YES">
+        <attribute name="airedEpisodeNumber" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="airedSeason" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="didIWatchIt" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="episodeName" attributeType="String" syncable="YES"/>
+        <attribute name="episodeOverview" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <relationship name="series" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Series" inverseName="episodes" inverseEntity="Series" syncable="YES"/>
+    </entity>
+    <entity name="Series" representedClassName=".Series" syncable="YES">
+        <attribute name="bannerImage" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES" syncable="YES"/>
+        <attribute name="bannerURL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="firstAired" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="id" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="network" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="overView" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="seriesName" attributeType="String" syncable="YES"/>
+        <attribute name="status" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="episodes" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Episode" inverseName="series" inverseEntity="Episode" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Episode" positionX="-63" positionY="45" width="128" height="148"/>
+        <element name="Series" positionX="115" positionY="108" width="128" height="178"/>
+    </elements>
+</model>
