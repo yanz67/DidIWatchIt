@@ -30,7 +30,7 @@
                                         <rect key="frame" x="0.0" y="28" width="600" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rdO-eb-rPd" id="eoq-23-Hor">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="80"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="79.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZER-xk-c1P">
@@ -107,7 +107,7 @@
                                 <rect key="frame" x="0.0" y="92" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="kwG-In-eha" id="7pV-sK-jcs">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="jBc-1r-8Y8">
@@ -212,7 +212,7 @@
             </objects>
             <point key="canvasLocation" x="2941" y="-75"/>
         </scene>
-        <!--Shows View Controller-->
+        <!--Did I Watch It-->
         <scene sceneID="daH-dv-qay">
             <objects>
                 <tableViewController id="GvJ-7Z-jC2" customClass="TVShowsViewController" customModule="Did_I_Watch_It" customModuleProvider="target" sceneMemberID="viewController">
@@ -225,7 +225,7 @@
                                 <rect key="frame" x="0.0" y="92" width="600" height="84"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="til-pE-SKi" id="Mfb-R3-fSD">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="84"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="83.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7d3-57-6me">
@@ -264,7 +264,7 @@
                         </connections>
                     </tableView>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" id="lfh-OX-gNI">
+                    <navigationItem key="navigationItem" title="Did I Watch It" id="lfh-OX-gNI">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="QTG-PD-B6R">
                             <connections>
                                 <segue destination="32i-8N-c62" kind="presentation" identifier="addSeries" id="ov1-dY-uS3"/>
